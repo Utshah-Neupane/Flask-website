@@ -1,0 +1,17 @@
+To run:
+flask --app market.py run
+"But when I do python market.py it runs in debug mode. I think this is better"
+
+Website from where I copied template styling code: (Version matters)
+https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+
+
+To create database: After writing code to create database and specifying filename in market.py
+In terminal:
+python init_db.py which creates the databse within folder instance
+
+
+
+To query and add items in database:
+python seed_db.py 
