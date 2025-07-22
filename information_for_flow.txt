@@ -12,6 +12,11 @@ In terminal:
 python init_db.py which creates the databse within folder instance
 
 
-
 To query and add items in database:
 python seed_db.py 
+
+
+This is to generate the secret key so that register form page html file will be displayed to client
+>>> import os
+>>> os.urandom(12).hex()
+'a921454d727093c2b06b82c7'
