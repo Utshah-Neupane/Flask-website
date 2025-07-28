@@ -23,24 +23,24 @@ with app.app_context():
     db.session.commit()   # Commit here so user exists before setting as owner
     
     
-    item1.owner = User.query.filter_by(username = "John").first().id
-    db.session.add(item1)
-    db.session.commit()
+    # item1.owner = User.query.filter_by(username = "John").first().id
+    # db.session.add(item1)
+    # db.session.commit()
     
     
 
-    for item in Item.query.all():
-        print(f"{item.name}: {item.price}, {item.barcode}, {item.description}")
+    # for item in Item.query.all():
+    #     print(f"{item.name}: {item.price}, {item.barcode}, {item.description}")
         
     
-    print(item1.owner)  #Gives id of the owner
+    # print(item1.owner)  #Gives id of the owner
     
-    i = Item.query.filter_by(name = "IPhone10").first()
-    print(i.owned_user)
+    # i = Item.query.filter_by(name = "IPhone10").first()
+    # print(i.owned_user)
     
     
-    print(User.query.all())
-    print(Item.query.all())  #gives as a list
+    # print(User.query.all())
+    # print(Item.query.all())  #gives as a list
     
     
     
