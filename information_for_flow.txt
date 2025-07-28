@@ -15,6 +15,9 @@ python init_db.py which creates the databse within folder instance
 To query and add items in database:
 python seed_db.py 
 
+To delete database:
+del instance\market.db
+
 
 This is to generate the secret key so that register form page html file will be displayed to client
 >>> import os

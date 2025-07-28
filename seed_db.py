@@ -9,15 +9,15 @@ with app.app_context():
 
 
     if not Item.query.filter_by(name="IPhone10").first():
-        item1 = Item(name="IPhone10", price=500, barcode="111222333444", description="iPhone 10 description")
+        item1 = Item(name="IPhone10", price=500, barcode="111222333444", description="iPhone 10 is okay phone!")
         db.session.add(item1)
 
     if not Item.query.filter_by(name="MacBook").first():
-        item2 = Item(name="MacBook", price=1200, barcode="555666777888", description="Laptop desc")
+        item2 = Item(name="MacBook", price=700, barcode="555666777888", description="Laptop is good to work with!")
         db.session.add(item2)
 
     if not Item.query.filter_by(name="Tablet").first():
-        item3 = Item(name="Tablet", price=1100, barcode="579305222278", description="Tablet is good!")
+        item3 = Item(name="Tablet", price=300, barcode="579305222278", description="Tablet is good but not for kids!")
         db.session.add(item3)
     
     db.session.commit()   # Commit here so user exists before setting as owner
