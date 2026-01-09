@@ -1,0 +1,4 @@
+.env
+_pycache_
+information_for_flow.txt
+seed_db.py
